@@ -3,6 +3,11 @@
   <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
   <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
+  <style>
+    video {
+      height: auto !important;
+    }
+  </style>
   <body style="margin:0;padding:0;">
     <div class="container">
       <video controls playsinline>
@@ -10,9 +15,9 @@
       </video>
     </div>
     <script>
-      const player = new Plyr('video', 
+      const player = new Plyr('video',
                               {
-                                captions: {active: true}, 
+                                captions: {active: true},
                                 seekTime: 5,
                                 controls: [
                                   'play-large',
